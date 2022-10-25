@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">DOM 조작</h1>
+  <p class="text">querySelector</p>
+  <p class="text">querySelectorAll</p>
+  <ul>
+    <li>Javascript</li>
+    <li>Python</li>
+  </ul>
+
+  <script>
+    // dpcument에서 querySelector로 id가 title인 애를 고르겠다
+    console.log(document.querySelector('#title')) 
+    // document에서 class가 text인 모든 요소를 고르겠다.
+    console.log(document.querySelectorAll('.text'))
+    
+    console.log(document.querySelector('.text'))
+    document.querySelectorAll('body> ul > li')
+  </script>
+</body>
+</html>
